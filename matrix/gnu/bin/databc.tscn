@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://dbe2rpshfelu8"]
+
+[ext_resource type="Script" path="res://Control.gd" id="1_m2v2c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nk7vp"]
+resource_local_to_scene = true
+
+[sub_resource type="Theme" id="Theme_v43dq"]
+
+[node name="Control" type="Control" node_paths=PackedStringArray("shortcut_context")]
+process_mode = 3
+process_priority = 5512
+process_physics_priority = 5512
+process_thread_group = 1
+process_thread_group_order = 5512
+process_thread_messages = 3
+show_behind_parent = true
+top_level = true
+clip_children = 2
+z_index = 4096
+y_sort_enabled = true
+material = SubResource("ShaderMaterial_nk7vp")
+use_parent_material = true
+clip_contents = true
+layout_direction = 1
+layout_mode = 3
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+focus_neighbor_left = NodePath(".")
+focus_neighbor_top = NodePath(".")
+focus_neighbor_right = NodePath(".")
+focus_neighbor_bottom = NodePath(".")
+focus_next = NodePath(".")
+focus_previous = NodePath(".")
+focus_mode = 2
+mouse_filter = 1
+shortcut_context = NodePath(".")
+theme = SubResource("Theme_v43dq")
+script = ExtResource("1_m2v2c")
